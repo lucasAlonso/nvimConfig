@@ -73,6 +73,11 @@ return require('packer').startup(function(use)
   use("github/copilot.vim")
   use("eandrju/cellular-automaton.nvim")
   use("laytan/cloak.nvim")
-
+  use({
+    "stevearc/conform.nvim",
+    config = function()
+      require("conform").setup()
+    end,
+  })
 end)
 
